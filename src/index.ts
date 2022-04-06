@@ -1,1 +1,1 @@
-export {HelloWorld} from './hello-world';
+export {EZMailerClient} from './client';

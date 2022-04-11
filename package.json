@@ -1,6 +1,6 @@
 {
   "name": "ezmailer-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library for interacting with the a HAuth server",
   "main": "dist/index.js",
   "scripts": {

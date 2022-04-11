@@ -6,10 +6,12 @@ export class EZMailerClient {
 
     private api: AxiosInstance;
 
-    constructor(private readonly baseURL: string) {
+    constructor(private readonly baseURL: string, private readonly apiKey: string) {
         this.api = axios.create({
             baseURL,
         });
+
+        this.api.defaults.headers.common["Authorization"] = apiKey;
     }
 
     public async createDomain(domain: string): Promise<Domain> {
